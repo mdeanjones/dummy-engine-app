@@ -1,0 +1,20 @@
+{
+	"name": "dummy-webapp",
+	"license": "MIT",
+	"engines": {
+		"node": "14.17.3"
+	},
+	"private": true,
+	"workspaces": [
+		"packages/@dummy-app/*",
+		"packages/@dummy-engines/*"
+	],
+	"scripts": {
+		"bootstrap": "lerna bootstrap",
+		"lerna-clean": "cd packages/@dummy-app/webapp && rm -rf dist && cd ../../.. && lerna clean",
+		"start:webapp": "lerna run --stream --no-prefix --scope @dummy-app/webapp start"
+	},
+	"devDependencies": {
+		"lerna": "^4.0.0"
+	}
+}

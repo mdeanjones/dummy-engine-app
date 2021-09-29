@@ -1,0 +1,11 @@
+<div class="row" id={{(@dummy-engine/dummyeng/helpers/guid-for-helper this 'mobile-phone-row')}}>
+  <div class="col-md-2">
+    Input phone number:
+    <@dummy-engines/ember-inputmask/components/one-way-input-mask
+      @mask='(999) 999-9999'
+      @id={{(@dummy-engine/dummyeng/helpers/guid-for-helper this 'mobile-phone-input')}}
+      @type='text'
+      @value={{this.phone}}
+    />
+  </div>
+</div>

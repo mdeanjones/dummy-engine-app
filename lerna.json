@@ -1,0 +1,15 @@
+{
+  "packages": [
+    "packages/@dummy-app/*",
+    "packages/@dummy-engines/*"
+  ],
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  },
+  "version": "independent",
+  "npmClient": "npm"
+}
