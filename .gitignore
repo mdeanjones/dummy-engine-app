@@ -1,5 +1,8 @@
 # compiled output
+packages/@dummy-app/webapp/dist
+/dist
 dist
+/tmp
 tmp
 
 # dependencies
