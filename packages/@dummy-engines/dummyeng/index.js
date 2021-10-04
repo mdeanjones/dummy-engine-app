@@ -5,7 +5,7 @@ module.exports = EngineAddon.extend({
   name: require('./package.json').name,
 
   lazyLoading: {
-    enabled: false
+    enabled: true,
   },
 
   isDevelopingAddon() {

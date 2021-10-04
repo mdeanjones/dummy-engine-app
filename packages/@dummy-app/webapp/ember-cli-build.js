@@ -58,6 +58,11 @@ module.exports = function (defaults) {
       includePolyfill: true
     },
 
+		assetLoader: {
+			generateURI(filePath) {
+				return '/dummy' + filePath;
+			}
+		},
   });
   app.import('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js');
   app.import('node_modules/moment/min/moment.min.js');
