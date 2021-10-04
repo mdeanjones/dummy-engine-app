@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   const ENV = {
     modulePrefix: '@dummy-engines/dummyeng',
-    podModulePrefix: 'dummyeng/ui',
+    podModulePrefix: '@dummy-engines/dummyeng/ui',
     environment,
     EmberENV: {
       EXTEND_PROTOTYPES: {

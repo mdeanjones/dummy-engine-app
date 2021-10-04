@@ -8,7 +8,7 @@ let App = Application.extend({
   podModulePrefix: config.podModulePrefix,
   Resolver: Resolver,
   engines: {
-    dummyeng: {
+    '@dummy-engines/dummyeng': {
       dependencies: {
         services: [
           { store: 'store' }

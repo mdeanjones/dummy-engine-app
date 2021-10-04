@@ -2,7 +2,7 @@
 const EngineAddon = require('ember-engines/lib/engine-addon');
 
 module.exports = EngineAddon.extend({
-  name: 'dummyeng',
+  name: require('./package.json').name,
 
   lazyLoading: {
     enabled: false
