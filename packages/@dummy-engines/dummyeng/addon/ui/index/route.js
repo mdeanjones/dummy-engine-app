@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
 
-export default Route.extend({
+
+export default class ApplicationIndexRoute extends Route {
   beforeModel() {
-    this._super(...arguments);
-    this.transitionTo('registration');
+    this.transitionTo('registration'); // See: https://github.com/ember-engines/ember-engines/pull/669
   }
-});
+}

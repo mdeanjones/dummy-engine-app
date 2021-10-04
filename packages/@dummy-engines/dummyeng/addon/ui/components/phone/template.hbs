@@ -1,10 +1,9 @@
-<div class="row" id={{(@dummy-engines/dummyeng/helpers/guid-for-helper this 'mobile-phone-row')}}>
+<div class="row" id={{guid-for-helper this 'mobile-phone-row'}}>
   <div class="col-md-6">
     Input phone number:
-    <OneWayInputMask
+    <input
       style="width:100px"
-      mask='(999) 999-9999'
-      id={{(@dummy-engines/dummyeng/helpers/guid-for-helper this 'mobile-phone-input')}}
+      id={{guid-for-helper this 'mobile-phone-input'}}
       type='text'
       value={{this.phone}}
     />
