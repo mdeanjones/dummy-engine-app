@@ -12,17 +12,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ember-cli-babel": "*",
+		"ember-cli-babel": "^7.26.3",
     "ember-cli-htmlbars": "*",
-    "ember-inputmask": "^0.11.0",
-    "ember-multiselect-checkboxes": "*",
-    "ember-radio-buttons": "5.0.0",
     "ember-truth-helpers": "*"
   },
   "devDependencies": {
     "ember-cli": "~3.26.1",
     "ember-cli-app-version": "^5.0.0",
-    "ember-cli-babel": "^7.26.3",
+
     "ember-engines": "0.8.19",
     "ember-source": "3.27.5"
   },
