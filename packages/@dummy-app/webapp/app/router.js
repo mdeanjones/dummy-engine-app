@@ -1,5 +1,4 @@
 import EmberRouter from '@ember/routing/router';
-import { inject } from '@ember/service';
 import config from './config/environment';
 
 const Router = EmberRouter.extend({
@@ -8,12 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
-
-  this.route('landing', function() {
-  });
-
-  this.mount('dummyeng', { as: 'dummyeng', path: 'dummyeng' });
-
+  this.mount('@dummy-engines/dummyeng', { as: 'dummyeng' });
 });
 
 export default Router;
